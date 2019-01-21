@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>面向对象（1） | hello 2019</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="继承继承就是子类继承父类的特征和行为，使得子类对象（实例）具有父类的实例域和方法，或子类从父类继承方法，使得子类具有父类相同的行为 实现代码12345678910class 父类&amp;#123;   \\\&amp;#125;class 子类 extends 父类&amp;#123;	\\\&amp;#125; 作用继承主要是为了解决大量重复代码，并提高代码的维护性，通过继承可以把代码中重复的部分提取出来，通过继承，让子类实">
+<meta property="og:type" content="article">
+<meta property="og:title" content="面向对象（1）">
+<meta property="og:url" content="http://yoursite.com/2019/01/21/面向对象（1）/index.html">
+<meta property="og:site_name" content="hello 2019">
+<meta property="og:description" content="继承继承就是子类继承父类的特征和行为，使得子类对象（实例）具有父类的实例域和方法，或子类从父类继承方法，使得子类具有父类相同的行为 实现代码12345678910class 父类&amp;#123;   \\\&amp;#125;class 子类 extends 父类&amp;#123;	\\\&amp;#125; 作用继承主要是为了解决大量重复代码，并提高代码的维护性，通过继承可以把代码中重复的部分提取出来，通过继承，让子类实">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-01-21T07:28:42.423Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="面向对象（1）">
+<meta name="twitter:description" content="继承继承就是子类继承父类的特征和行为，使得子类对象（实例）具有父类的实例域和方法，或子类从父类继承方法，使得子类具有父类相同的行为 实现代码12345678910class 父类&amp;#123;   \\\&amp;#125;class 子类 extends 父类&amp;#123;	\\\&amp;#125; 作用继承主要是为了解决大量重复代码，并提高代码的维护性，通过继承可以把代码中重复的部分提取出来，通过继承，让子类实">
+  
+    <link rel="alternate" href="/atom.xml" title="hello 2019" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">hello 2019</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-面向对象（1）" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/01/21/面向对象（1）/" class="article-date">
+  <time datetime="2019-01-21T07:27:54.000Z" itemprop="datePublished">2019-01-21</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      面向对象（1）
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h1><p>继承就是子类继承父类的特征和行为，使得子类对象（实例）具有父类的实例域和方法，或子类从父类继承方法，使得子类具有父类相同的行为</p>
+<h2 id="实现代码"><a href="#实现代码" class="headerlink" title="实现代码"></a>实现代码</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">class 父类&#123;</span><br><span class="line"></span><br><span class="line">   \\\</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class 子类 extends 父类&#123;</span><br><span class="line"></span><br><span class="line">	\\\</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h2><p>继承主要是为了解决大量重复代码，并提高代码的维护性，通过继承可以把代码中重复的部分提取出来，通过继承，让子类实现相同的功能和方法。</p>
+<h2 id="特征"><a href="#特征" class="headerlink" title="特征"></a>特征</h2><ul>
+<li>java不支持多继承。</li>
+<li>子类可以拥有自己的属性和方法</li>
+<li>子类可以用自己的方式实现父类的方法</li>
+</ul>
+<h3 id="super和this"><a href="#super和this" class="headerlink" title="super和this"></a>super和this</h3><p>super关键字：我们可以通过super关键字来实现对父类成员的访问，用来引用当前对象的父类。<br>this关键字：指向自己的引用。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">class Animal &#123;</span><br><span class="line">  void eat() &#123;</span><br><span class="line">    System.out.println(&quot;animal : eat&quot;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">class Dog extends Animal &#123;</span><br><span class="line">  void eat() &#123;</span><br><span class="line">    System.out.println(&quot;dog : eat&quot;);</span><br><span class="line">  &#125;</span><br><span class="line">  void eatTest() &#123;</span><br><span class="line">    this.eat();   // this 调用自己的方法</span><br><span class="line">    super.eat();  // super 调用父类方法</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">public class Test &#123;</span><br><span class="line">  public static void main(String[] args) &#123;</span><br><span class="line">    Animal a = new Animal();</span><br><span class="line">    a.eat();</span><br><span class="line">    Dog d = new Dog();</span><br><span class="line">    d.eatTest();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h3 id="final关键字"><a href="#final关键字" class="headerlink" title="final关键字"></a>final关键字</h3><p>final 关键字声明类可以把类定义为不能继承的，即最终类；或者用于修饰方法，该方法不能被子类重写：</p>
+<h1 id="封装"><a href="#封装" class="headerlink" title="封装"></a>封装</h1><p>在面向对象程式设计方法中，封装（英语：Encapsulation）是指一种将抽象性函式接口的实现细节部份包装、隐藏起来的方法。<br>封装可以被认为是一个保护屏障，防止该类的代码和数据被外部类定义的代码随机访问。<br>要访问该类的代码和数据，必须通过严格的接口控制。<br>封装最主要的功能在于我们能修改自己的实现代码，而不用修改那些调用我们代码的程序片段。<br>适当的封装可以让程式码更容易理解与维护，也加强了程式码的安全性。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">public class Person&#123;</span><br><span class="line">	private String name; //通过设置private把属性设为私有</span><br><span class="line">	private int age;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>对每个值属性提供对外的公共方法访问，也就是创建一对赋取值方法，用于对私有属性的访问<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">    public int getAge()&#123;</span><br><span class="line">      return age;</span><br><span class="line">    &#125;</span><br><span class="line">​</span><br><span class="line">    public String getName()&#123;</span><br><span class="line">      return name;</span><br><span class="line">    &#125;</span><br><span class="line">​</span><br><span class="line">    public void setAge(int age)&#123;</span><br><span class="line">      this.age = age; //这里的this为了解决实例变量（private String name）和局部变量（setName(String name)中的name变量）之间发生的同名的冲突</span><br><span class="line">    &#125;</span><br><span class="line">​</span><br><span class="line">    public void setName(String name)&#123;</span><br><span class="line">      this.name = name;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/01/21/面向对象（1）/" data-id="cjr60ew870003dg7je1s70vkm" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2019/01/14/java基本语法/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">java基本语法</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">January 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/01/21/面向对象（1）/">面向对象（1）</a>
+          </li>
+        
+          <li>
+            <a href="/2019/01/14/java基本语法/">java基本语法</a>
+          </li>
+        
+          <li>
+            <a href="/2019/01/08/开博大吉/">2019，努力，奋斗！</a>
+          </li>
+        
+          <li>
+            <a href="/2019/01/08/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 yifu mo<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
