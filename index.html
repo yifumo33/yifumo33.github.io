@@ -124,11 +124,24 @@
 <li>实例变量在对象创建的时候创建，在对象被销毁的时候销毁；</li>
 <li>实例变量的值应该至少被一个方法、构造方法或者语句块引用，使得外部能够通过这些方式获取实例变量信息；</li>
 </ul>
+<h2 id="修饰符"><a href="#修饰符" class="headerlink" title="修饰符"></a>修饰符</h2><ul>
+<li>private : 在同一类内可见。使用对象：变量、方法。 注意：不能修饰类（外部类）</li>
+<li>public : 对所有类可见。使用对象：类、接口、变量、方法</li>
+<li>protected : 对同一包内的类和所有子类可见。使用对象：变量、方法。 注意：不能修饰类（外部类）。</li>
+</ul>
+<h2 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h2><p>和其他语言一样。</p>
+<h2 id="循环结构"><a href="#循环结构" class="headerlink" title="循环结构"></a>循环结构</h2><ul>
+<li>for</li>
+<li>while</li>
+<li>do…while</li>
+</ul>
+<h3 id="增强for循环"><a href="#增强for循环" class="headerlink" title="增强for循环"></a>增强for循环</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">for(声明语句:表达式)&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>实例代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">public class Test &#123;</span><br><span class="line">   public static void main(String args[])&#123;</span><br><span class="line">      int [] numbers = &#123;10, 20, 30, 40, 50&#125;;</span><br><span class="line"> </span><br><span class="line">      for(int x : numbers )&#123;</span><br><span class="line">         System.out.print( x );</span><br><span class="line">         System.out.print(&quot;,&quot;);</span><br><span class="line">      &#125;</span><br><span class="line">      System.out.print(&quot;\n&quot;);</span><br><span class="line">      String [] names =&#123;&quot;James&quot;, &quot;Larry&quot;, &quot;Tom&quot;, &quot;Lacy&quot;&#125;;</span><br><span class="line">      for( String name : names ) &#123;</span><br><span class="line">         System.out.print( name );</span><br><span class="line">         System.out.print(&quot;,&quot;);</span><br><span class="line">      &#125;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/01/14/java基本语法/" data-id="cjqw2x9ib0001p07jfz1i3rgs" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/01/14/java基本语法/" data-id="cjr604hrd0000c37jg6usjabh" class="article-share-link">Share</a>
       
       
     </footer>
@@ -165,7 +178,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/01/08/开博大吉/" data-id="cjqw2x9id0002p07j9kxmrbfy" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/01/08/开博大吉/" data-id="cjr604hro0002c37j1b1sub57" class="article-share-link">Share</a>
       
       
     </footer>
@@ -210,7 +223,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/01/08/hello-world/" data-id="cjqw2x9i50000p07j69o3l2iu" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/01/08/hello-world/" data-id="cjr604hrl0001c37jfq1xd0fa" class="article-share-link">Share</a>
       
       
     </footer>
