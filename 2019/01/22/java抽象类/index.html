@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>java抽象类 | hello 2019</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="多态多态就是抽象事物在不同情况下产生的不同状态。比如有一个抽象类动物，抽象类动物具有行走的方法，但是不同动物比如猫狗、人类、海豚显然有着不同的具体实现，这个实现的过程就叫多态。多态具有以下特征：1、有继承关系2、有方法的重写3、父类引用指向子类对象12345678910111213141516171819202122232425public class animal &amp;#123;    //在动物">
+<meta property="og:type" content="article">
+<meta property="og:title" content="java抽象类">
+<meta property="og:url" content="http://yoursite.com/2019/01/22/java抽象类/index.html">
+<meta property="og:site_name" content="hello 2019">
+<meta property="og:description" content="多态多态就是抽象事物在不同情况下产生的不同状态。比如有一个抽象类动物，抽象类动物具有行走的方法，但是不同动物比如猫狗、人类、海豚显然有着不同的具体实现，这个实现的过程就叫多态。多态具有以下特征：1、有继承关系2、有方法的重写3、父类引用指向子类对象12345678910111213141516171819202122232425public class animal &amp;#123;    //在动物">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="http://video.jirengu.com/xdml/image/0531b0b3-ddc8-438d-9c8b-b2b2f398f3fc/2019-1-22-9-57-31.png">
+<meta property="og:updated_time" content="2019-01-22T02:34:56.559Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="java抽象类">
+<meta name="twitter:description" content="多态多态就是抽象事物在不同情况下产生的不同状态。比如有一个抽象类动物，抽象类动物具有行走的方法，但是不同动物比如猫狗、人类、海豚显然有着不同的具体实现，这个实现的过程就叫多态。多态具有以下特征：1、有继承关系2、有方法的重写3、父类引用指向子类对象12345678910111213141516171819202122232425public class animal &amp;#123;    //在动物">
+<meta name="twitter:image" content="http://video.jirengu.com/xdml/image/0531b0b3-ddc8-438d-9c8b-b2b2f398f3fc/2019-1-22-9-57-31.png">
+  
+    <link rel="alternate" href="/atom.xml" title="hello 2019" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">hello 2019</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-java抽象类" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/01/22/java抽象类/" class="article-date">
+  <time datetime="2019-01-22T02:09:22.000Z" itemprop="datePublished">2019-01-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      java抽象类
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="多态"><a href="#多态" class="headerlink" title="多态"></a>多态</h1><p>多态就是抽象事物在不同情况下产生的不同状态。比如有一个抽象类动物，抽象类动物具有行走的方法，但是不同动物比如猫狗、人类、海豚显然有着不同的具体实现，这个实现的过程就叫多态。<br>多态具有以下特征：<br>1、有继承关系<br>2、有方法的重写<br>3、父类引用指向子类对象<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">public class animal &#123;</span><br><span class="line">    //在动物这个类中定义方法</span><br><span class="line">    public void walk()&#123;  &#125;;</span><br><span class="line">&#125;</span><br><span class="line">//Dog这个类中重写</span><br><span class="line">public class Dog extends animal&#123;</span><br><span class="line">    @Override</span><br><span class="line">    public  void walk()&#123;</span><br><span class="line">        System.out.println(&quot;动物行走&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">//人类这个类中重写</span><br><span class="line">public class human2 extends animal &#123;</span><br><span class="line">    @Override</span><br><span class="line">    public void walk()&#123;</span><br><span class="line">        System.out.println(&quot;人类行走&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">    public static void main(String[] args)&#123;</span><br><span class="line">        human2 H2 = new human2();</span><br><span class="line">        H2.walk();</span><br><span class="line">        Dog D2 = new Dog();</span><br><span class="line">        D2.walk();</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></p>
+<p>最后输出结果<br><img src="//video.jirengu.com/xdml/image/0531b0b3-ddc8-438d-9c8b-b2b2f398f3fc/2019-1-22-9-57-31.png" alt="image.png"></p>
+<h1 id="抽象类"><a href="#抽象类" class="headerlink" title="抽象类"></a>抽象类</h1><ul>
+<li>在面向对象的概念中，所有的对象都是通过类来描绘的，但是反过来，并不是所有的类都是用来描绘对象的，如果一个类中没有包含足够的信息来描绘一个具体的对象，这样的类就是抽象类。</li>
+<li>抽象类除了不能实例化对象之外，类的其它功能依然存在，成员变量、成员方法和构造方法的访问方式和普通类一样。</li>
+<li>由于抽象类不能实例化对象，所以抽象类必须被继承，才能被使用<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">// 定义一个动物的抽象类</span><br><span class="line">package com.company;</span><br><span class="line"></span><br><span class="line">abstract public class animal &#123;</span><br><span class="line"></span><br><span class="line">    public void walk()&#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    abstract void talk(); //定义抽象方法talk</span><br><span class="line"></span><br><span class="line">    public static void main(String[] args)&#123;</span><br><span class="line">        human2 H2 = new human2();</span><br><span class="line">        H2.walk();</span><br><span class="line">        Dog D2 = new Dog();</span><br><span class="line">        D2.walk();</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">//定义一个动物的具体类Dog</span><br><span class="line">public class Dog extends animal&#123;</span><br><span class="line">    @Override</span><br><span class="line">    public  void walk()&#123;</span><br><span class="line">        System.out.println(&quot;动物行走&quot;);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override </span><br><span class="line">    void talk() &#123;  //在这里实现抽象方法的具体实现</span><br><span class="line">        System.out.println(&quot;wawawa&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h1 id="接口"><a href="#接口" class="headerlink" title="接口"></a>接口</h1><p>接口是抽象方法的集合，因为JAVA中只能实现单继承，所以通过继承接口实现多个方法。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">package com.company;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">//定义一个Action接口</span><br><span class="line">public interface Action &#123;</span><br><span class="line"></span><br><span class="line">    public void run();</span><br><span class="line">    public void jump();</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">public class Dog extends animal implements Action&#123; //继承了Action接口后，必须实现接口所定义的方法</span><br><span class="line">    @Override</span><br><span class="line">    public  void walk()&#123;</span><br><span class="line">        System.out.println(&quot;动物行走&quot;);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public void talk() &#123;</span><br><span class="line">        System.out.println(&quot;wawawa&quot;);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public void run()&#123;</span><br><span class="line">        System.out.println(&quot;dog is running!&quot;);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public  void  jump()&#123;</span><br><span class="line">        System.out.println(&quot;dog is jumping&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h1 id="抽象类和接口的区别"><a href="#抽象类和接口的区别" class="headerlink" title="抽象类和接口的区别"></a>抽象类和接口的区别</h1><p>接口和抽象类都是继承树的上层，他们的共同点如下：1)    都是上层的抽象层。2)    都不能被实例化3)    都能包含抽象的方法，这些抽象的方法用于描述类具备的功能，但是不比提供具体的实现。他们的区别如下：1)    在抽象类中可以写非抽象的方法，从而避免在子类中重复书写他们，这样可以提高代码的复用性，这是抽象类的优势；接口中只能有抽象的方法。2)    一个类只能继承一个直接父类，这个父类可以是具体的类也可是抽象类；但是一个类可以实现多个接口。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/01/22/java抽象类/" data-id="cjr75cx2n0001zy7juzwvtlbj" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2019/01/21/面向对象（1）/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">面向对象（1）</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">January 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/01/22/java抽象类/">java抽象类</a>
+          </li>
+        
+          <li>
+            <a href="/2019/01/21/面向对象（1）/">面向对象（1）</a>
+          </li>
+        
+          <li>
+            <a href="/2019/01/14/java基本语法/">java基本语法</a>
+          </li>
+        
+          <li>
+            <a href="/2019/01/08/开博大吉/">2019，努力，奋斗！</a>
+          </li>
+        
+          <li>
+            <a href="/2019/01/08/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 yifu mo<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
